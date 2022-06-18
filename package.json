@@ -15,6 +15,7 @@
   "bugs": {
     "url": "https://github.com/17shenqi/themeparks-api/issues"
   },
+  "private": false,
   "homepage": "https://github.com/17shenqi/themeparks-api#readme",
   "dependencies": {
     "axios": "^0.27.2",
