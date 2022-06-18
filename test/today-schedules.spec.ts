@@ -5,11 +5,12 @@ const Locations = ['fldw', 'cadp', 'pardl', 'tkydl', 'shdr'];
 
 function genTest(location) {
   return it(`${location}`, async () => {
-    const data = await ThemeparksApi[location].getWaitTimes();
+    const data = await ThemeparksApi[location].getTodaySchedules();
     expect(data).to.be.a('array');
   });
 }
 
-describe('Themeparks-getWaitTimes', () => {
+describe('getTodaySchedules', () => {
   Locations.map((location) => genTest(location));
 });
+

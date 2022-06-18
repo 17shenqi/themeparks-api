@@ -1,20 +1,20 @@
-import Themeparks from '../service/themeparks'
+import Themeparks from '../service/themeparks';
 
 export default class extends Themeparks {
-  constructor(options:any = {}) {
+  constructor(options: any = {}) {
     options.parks = [
       {
         name: 'pardl',
-        fnName: 'DisneylandParisMagicKingdom'
+        fnName: 'DisneylandParisMagicKingdom',
       },
       {
         name: 'pardsl',
-        fnName: 'DisneylandParisWaltDisneyStudios'
-      }
-    ]
-    options.tz = 'Europe/Paris'
-    options.location = 'pardl'
+        fnName: 'DisneylandParisWaltDisneyStudios',
+      },
+    ];
+    options.tz = 'Europe/Paris';
+    options.location = 'pardl';
 
-    super(options)
+    super(options);
   }
 }

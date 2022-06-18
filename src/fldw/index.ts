@@ -1,28 +1,28 @@
-import Themeparks from '../service/themeparks'
+import Themeparks from '../service/themeparks';
 
 export default class extends Themeparks {
-  constructor(options:any = {}) {
+  constructor(options: any = {}) {
     options.parks = [
       {
         name: 'fldw',
-        fnName: 'WaltDisneyWorldMagicKingdom'
+        fnName: 'WaltDisneyWorldMagicKingdom',
       },
       {
         name: 'fle',
-        fnName: 'WaltDisneyWorldEpcot'
+        fnName: 'WaltDisneyWorldEpcot',
       },
       {
         name: 'flak',
-        fnName: 'WaltDisneyWorldAnimalKingdom'
+        fnName: 'WaltDisneyWorldAnimalKingdom',
       },
       {
         name: 'flhs',
-        fnName: 'WaltDisneyWorldHollywoodStudios'
-      }
-    ]
-    options.tz = 'America/New_York'
-    options.location = 'fldw'
+        fnName: 'WaltDisneyWorldHollywoodStudios',
+      },
+    ];
+    options.tz = 'America/New_York';
+    options.location = 'fldw';
 
-    super(options)
+    super(options);
   }
 }

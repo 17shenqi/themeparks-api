@@ -1,12 +1,12 @@
-import * as fs from "fs";
-import * as path from "path";
-import * as moment from "moment-timezone";
-import * as Themeparks from "themeparks";
-import { ScheduleDto, ScheduleItemDto } from "../dto/schedule.dto";
-import { DestinationType } from "../dto/destination.dto";
-import { WaitTimesDto } from "../dto/wait-times.dto";
-import { ChannelType } from "../dto/setting.dto";
-import Base from "./base";
+import * as fs from 'fs';
+import * as path from 'path';
+import * as moment from 'moment-timezone';
+import * as Themeparks from 'themeparks';
+import { ScheduleDto, ScheduleItemDto } from '../dto/schedule.dto';
+import { DestinationType } from '../dto/destination.dto';
+import { WaitTimesDto } from '../dto/wait-times.dto';
+import { ChannelType } from '../dto/setting.dto';
+import Base from './base';
 
 export default class extends Base {
   constructor(options: any = {}) {
@@ -57,8 +57,8 @@ async function getSchedules(parks, tz): Promise<ScheduleDto[]> {
         return {
           date: item.date,
           state: item.type,
-          startTime: moment.tz(item.openingTime, tz).format("HH:mm:ss"),
-          endTime: moment.tz(item.closingTime, tz).format("HH:mm:ss"),
+          startTime: moment.tz(item.openingTime, tz).format('HH:mm:ss'),
+          endTime: moment.tz(item.closingTime, tz).format('HH:mm:ss'),
         };
       }),
     });
