@@ -1,6 +1,9 @@
 # Themeparks Api
 
-根据 [Themeparks](https://github.com/cubehouse/themeparks) 封装的乐园等候时间查询 Api
+基于 [Themeparks](https://github.com/cubehouse/themeparks) 封装的乐园等候时间查询 Api
+
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/themeparks-api" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/themeparks-api" alt="Package License" /></a>
 
 ## 主要特性：
 
@@ -20,12 +23,24 @@
 | 东京迪士尼       | tkydl |
 
 ## 开始
-
 npm i themeparks-Api
 
 ```javascript
-import * as ThemeParksApi from 'themeparks-Api'
+import * as ThemeParksApi from 'themeparks-api'
 
 // 获取等候时间
-ThemeParksApi.cadp.getWaitTimes()
+ThemeParksApi[LocationCode].getWaitTimes()
+
+// 获取时间表
+ThemeParksApi[LocationCode].getSchedules()
+
+// 获取今日时间表
+ThemeParksApi[LocationCode].getTodaySchedules()
 ```
+
+## 使用的网站和应用
+
+- 小程序：魔法等候时间
+- 小程序：神奇等候时间
+- 小程序：乐园等候时间
+- 小程序：乐园日记
