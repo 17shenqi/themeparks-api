@@ -13,4 +13,3 @@ function genTest(location) {
 describe('getTodaySchedules', () => {
   Locations.map((location) => genTest(location));
 });
-
